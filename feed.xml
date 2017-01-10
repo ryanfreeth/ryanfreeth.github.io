@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ryanfreeth.com</title>
+  <subtitle>Ryan Freeth</subtitle>
+  <id>https://www.ryanfreeth.com/</id>
+  <link href="https://www.ryanfreeth.com/"/>
+  <link href="https://www.ryanfreeth.com/feed.xml" rel="self"/>
+  <author>
+    <name>Ryan Freeth</name>
+  </author>
+</feed>
