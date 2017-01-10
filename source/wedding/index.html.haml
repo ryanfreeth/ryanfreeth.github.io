@@ -15,7 +15,7 @@
   Vancouver International Airport (YVR) - 2 hours and 45 minutes drive to Manning Park
   Kelowna International Airport (YLW) - 3 hour drive to Manning Park
 
-[Inset map with stars indicating airports and Manning Park location]
+%iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.1792368970564!2d-120.78699041478127!3d49.06334069268833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3c2bd94cb6ac3751!2sManning+Park+Resort!5e0!3m2!1sen!2sca!4v1484056981736", :style => "border:0", :width => "600"}
 
 %h2
   ACCOMMODATION
@@ -61,16 +61,16 @@
     .form-left
       %p
         %label{:for => "name"} Name
-        %input#name{:name => "name", :placeholder => "Name...", :type => "text"}/
+        %input#name{:name => "name", :placeholder => "Your Name", :type => "text"}/
       %p
         %label{:for => "email"} Email
-        %input#email{:name => "email", :placeholder => "E-mail...", :type => "email"}/
+        %input#email{:name => "email", :placeholder => "Your E-mail", :type => "email"}/
       %input{:name => "_subject", :type => "hidden", :value => "Wedding RSVP"}/
       %input{:name => "_gotcha", :type => "text", style: "display:none"}
     .form-right
       %p
         %label{:for => "message"} Message
-        %textarea#message{:name => "message", :placeholder => "Comment away...", :rows => "10"}
+        %textarea#message{:name => "message", :placeholder => "Please let us know if you can make it", :rows => "10"}
   #contact-error
   %p.submit
     %input.button{:type => "submit", :value => "Send"}/
