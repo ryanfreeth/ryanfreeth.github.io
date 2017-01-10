@@ -3,10 +3,10 @@ xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   xml.title "ryanfreeth.com"
   xml.subtitle "Ryan Freeth"
-  xml.id "https://ryanfreeth.com/"
-  xml.link "href" => "https://ryanfreeth.com/"
-  xml.link "href" => "https://ryanfreeth.com/feed.xml", "rel" => "self"
-  xml.updated blog("blog").articles.first.date.to_time.iso8601
+  xml.id "https://www.ryanfreeth.com/"
+  xml.link "href" => "https://www.ryanfreeth.com/"
+  xml.link "href" => "https://www.ryanfreeth.com/feed.xml", "rel" => "self"
+  # xml.updated blog("blog").articles.first.date.to_time.iso8601
   xml.author { xml.name "Ryan Freeth" }
 
   blog("blog").articles[0..5].each do |article|
