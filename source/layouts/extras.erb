@@ -1,0 +1,31 @@
+<section id="extras" class="row">
+  <aside class="columns large-4 small-12">
+    <h6>Recent Articles</h6>
+    <ul>
+      <% blog.articles[0...5].each do |article| %>
+        <li>
+          <a href="<%= article.url %>"><%= article.title %></a>
+        </li>
+      <% end %>
+    </ul>
+
+  </aside>
+  <aside class="columns large-4 small-12">
+    <h6>Tags</h6>
+    <ul>
+      <% blog.tags.each do |tag, articles| %>
+        <li><a href="<%= tag_path tag, "blog" %>"><%= tag %> [<%= articles.size %>]</a></li>
+      <% end %>
+    </ul>
+
+  </aside>
+  <aside class="columns large-4 small-12">
+    <h6>By Year</h6>
+    <ul>
+      <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+        <li><a href="<%= blog_year_path year, "blog" %>"><%= year %> [<%= articles.size %>]</a></li>
+      <% end %>
+    </ul>
+  </aside>
+
+</section>

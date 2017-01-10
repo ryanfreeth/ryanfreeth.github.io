@@ -1,0 +1,13 @@
+---
+pageable: true
+per_page: 25
+---
+<% content_for(:section) { "Travel" } %>
+
+<%= page_header "Ryan's Travels" %>
+
+<br /><hr /><br/>
+<section id="travel" class="index-posts">
+  <%= partial "partials/article_index", locals: { articles: blog("travel").articles } %>
+  <br /><hr /><br />
+</section>

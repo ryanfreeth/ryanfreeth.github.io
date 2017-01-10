@@ -1,0 +1,33 @@
+---
+pageable: true
+per_page: 4
+---
+<% content_for(:title) { } %>
+<% content_for(:section) { 'I make things' } %>
+
+<section id="hero">
+  <header>
+    <h1>Hello, I'm Ryan. I build web apps.</h1>
+  </header>
+  <section>
+    <p>Are you struggling through coding challenges, tutorials, and your side projects at night trying the transition from another career into web development? Companies want developers with experience&mdash;but how do you get it? How do you ship and scale while staying on top of the latest tools and techniques?</p>
+
+    <p>Writing apps with Ruby on Rails is HARD. I know, I've been at it for nearly ten years. You want to get there faster? I can help.</p>
+  </section>
+</section>
+
+<h2 class="margin-bottom">New? Start here</h2>
+<section class="index-posts margin-top">
+  <% page_articles.each do |article| %>
+    <article class="index-post">
+      <header>
+        <h4>
+          <%= link_to article.title, article %>
+        </h4>
+        <% if article.data.summary %>
+          <p class="alt-title subtle"><%= article.data.summary %></p>
+        <% end %>
+      </header>
+    </article>
+  <% end %>
+</section>

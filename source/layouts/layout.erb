@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <%= auto_display_meta_tags(separator: '-') %>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="pingback" href="https://webmention.io/ryanfreeth.com/xmlrpc" />
+    <link rel="webmention" href="https://webmention.io/ryanfreeth.com/webmention" />
+
+    <script type="text/javascript" src="//use.typekit.net/ned0mml.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <%= stylesheet_link_tag "index.bundle" %>
+    <%= javascript_include_tag "head.bundle" %>
+    <%= favicon_tag 'turtle-favicon.ico' %>
+  </head>
+  <body id="application" class="typekit">
+    <%= partial "partials/topbar" %>
+    <div class="row">
+      <section id="main" role="main" class="large-12 small-12 columns">
+        <%= yield %>
+      </section>
+    </div>
+    <%= partial "partials/zen" %>
+    <%= partial "partials/footer" %>
+    <%= javascript_include_tag "index.bundle" %>
+    <%= yield_content :javascripts %>
+    <%= partial "partials/analytics" %>
+  </body>
+</html>

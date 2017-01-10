@@ -1,0 +1,25 @@
+---
+title: About
+author: admin
+layout: page
+---
+
+<% content_for(:title) { "About" } %>
+
+<%= page_header "About Me", "This is an \"About\" page" %>
+
+You can checkout my projects and open source contributions on [github.com/ryanfreeth][ghub].
+
+You can follow me [@ryanfreeth on twitter.com/ryanfreeth][twit].
+
+<br/>
+* * *
+<br/>
+
+<%= partial "partials/profile" %>
+
+<recent-tweet></recent-tweet>
+<script src="http://www.tweet-o-matic.com/tweets/ryanfreeth/recent.js" async="async" defer="defer"></script>
+
+ [ghub]: https://github.com/ryanfreeth
+ [twit]: https://twitter.com/ryanfreeth

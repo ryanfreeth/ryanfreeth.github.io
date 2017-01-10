@@ -1,0 +1,34 @@
+<footer>
+  <div class="row">
+    <%= image_tag "turtle-logo.svg", class: "turtle" %>
+    <section class="large-6 columns">
+      <h5>Most Popular</h5>
+      <ul>
+        <% top_articles.take(5).each do |article| %>
+          <li><%= link_to article.title, article %></li>
+        <% end %>
+      </ul>
+    </section>
+    <section class="large-3 columns">
+      <h5>Categories</h5>
+      <ul>
+        <% top_tags.take(5).each do |tag, articles| %>
+          <li><%= link_to tag, tag_path(tag, 'blog') %></li>
+        <% end %>
+      </ul>
+    </section>
+    <section class="large-3 columns">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="mailto:ryan@ryanfreeth.com" rel="me">email</a></li>
+        <li><a href="https://twitter.com/ryanfreeth" rel="me">twitter</a></li>
+        <li><a href="https://github.com/ryanfreeth" rel="me">github</a></li>
+        <li><a href="http://stackoverflow.com/users/1938947/ryan-freeth?tab=profile" rel="me">stackoverflow</a></li>
+        <li><a href="https://www.linkedin.com/in/ryanfreeth" rel="me">linkedin</a></li>
+      </ul>
+    </section>
+  </div>
+  <p class="copyright small subtle center">
+    © <%= Date.today.strftime("%Y") %> Ryan Freeth. All rights reserved.
+  </p>
+</footer>
