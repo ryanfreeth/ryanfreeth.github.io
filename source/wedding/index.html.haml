@@ -3,6 +3,27 @@
 
 = page_header "August 26, 2017"
 
+%h2 RSVP
+%form#comment-form{:action => "https://formspree.io/ryan.freeth@gmail.com", :method => "POST", :novalidate => ""}
+  .form
+    .form-left
+      %p
+        %label{:for => "name"} Name
+        %input#name{:name => "name", :placeholder => "Your Name", :type => "text"}/
+      %p
+        %label{:for => "email"} Email
+        %input#email{:name => "email", :placeholder => "Your E-mail", :type => "email"}/
+      %input{:name => "_subject", :type => "hidden", :value => "Wedding RSVP"}/
+      %input{:name => "_gotcha", :type => "text", style: "display:none"}
+    .form-right
+      %p
+        %label{:for => "message"} Message
+        %textarea#message{:name => "message", :placeholder => "Please let us know if you can make it", :rows => "10"}
+  #contact-error
+  %p.submit
+    %input.button{:type => "submit", :value => "Send"}/
+/ end form
+
 %h2
   LOCATION
 
@@ -54,24 +75,3 @@
 %p
   %small
     10% discount will be applied on the rates listed above. Extra guests over 16 years of age will be an additional $10.00 per person, per night. Pets are allowed to stay in rooms for an additional fee, please inquire with the resort when booking. No pets allowed at ceremony or reception locations.
-
-%h2 RSVP
-%form#comment-form{:action => "https://formspree.io/ryan.freeth@gmail.com", :method => "POST", :novalidate => ""}
-  .form
-    .form-left
-      %p
-        %label{:for => "name"} Name
-        %input#name{:name => "name", :placeholder => "Your Name", :type => "text"}/
-      %p
-        %label{:for => "email"} Email
-        %input#email{:name => "email", :placeholder => "Your E-mail", :type => "email"}/
-      %input{:name => "_subject", :type => "hidden", :value => "Wedding RSVP"}/
-      %input{:name => "_gotcha", :type => "text", style: "display:none"}
-    .form-right
-      %p
-        %label{:for => "message"} Message
-        %textarea#message{:name => "message", :placeholder => "Please let us know if you can make it", :rows => "10"}
-  #contact-error
-  %p.submit
-    %input.button{:type => "submit", :value => "Send"}/
-/ end form
