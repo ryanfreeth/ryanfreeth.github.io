@@ -67,7 +67,7 @@ configure :build do
 
   set :protocol, "https"
   set :host, "ryanfreeth.com"
-  set :google_analytics_id, ''
+  set :google_analytics_id, 'UA-90633592-1'
   set :mailchimp_form_id,   ''
 
   activate :asset_hash, ignore: [/^serviceworker.js/, /touch-icon.*png/]
