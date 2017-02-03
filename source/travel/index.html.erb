@@ -11,27 +11,22 @@ per_page: 25
 <h2>Next Destination: Padang Bai, Bali</h2>
 <div id='travellerspoint-map875774_990035'><script src='http://www.travellerspoint.com/badges/badge_membermap.cfm?user=ryanfreeth&tripid=990035&amp;badgeid=travellerspoint-map875774_990035&amp;height=300&amp;width=450'></script><p class='travellerspoint-map-link'>View Full Size <a href='https://secure.travellerspoint.com/member_map.cfm?user=ryanfreeth&tripid=990035'>Travel Map</a> at <a href='http://www.travellerspoint.com'>Travellerspoint</a></p></div>
 <br /><hr /><br/>
-<section id="travel" class="index-posts">
-  <%= partial "partials/article_index", locals: { articles: blog("travel").articles } %>
-  <br /><hr /><br />
-</section>
-<h3>Number of steps: 382,973</h3>
-<div class="medium-3 columns" data-sticky-container>
-  <div class="sticky" data-sticky data-anchor="content">
-    <h4>Categories</h4>
-    <ul>
-      <li><a href="#">Skyler</a></li>
-      <li><a href="#">Jesse</a></li>
-      <li><a href="#">Mike</a></li>
-      <li><a href="#">Holly</a></li>
-    </ul>
-
-    <h4>Authors</h4>
-    <ul>
-      <li><a href="#">Skyler</a></li>
-      <li><a href="#">Jesse</a></li>
-      <li><a href="#">Mike</a></li>
-      <li><a href="#">Holly</a></li>
-    </ul>
+<div class="row" id="content">
+  <div class="medium-8 columns">
+    <section id="travel" class="index-posts">
+      <%= partial "partials/article_index", locals: { articles: blog("travel").articles } %>
+      <br /><hr /><br />
+    </section>
   </div>
+<!-- <h3>Number of steps: 382,973</h3> -->
+  <div class="medium-3 columns" data-sticky-container>
+    <div class="sticky" data-sticky data-anchor="content">
+      <h4>Destinations</h4>
+      <ul>
+        <li><a href="#">Thailand</a></li>
+        <li><a href="#">Bali</a></li>
+        <li><a href="#">Cambodia</a></li>
+        <li><a href="#">Vietnam</a></li>
+      </ul>
+    </div>
 </div>
