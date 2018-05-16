@@ -1,3 +1,0 @@
-# ryanfreeth.com
-
-My website
